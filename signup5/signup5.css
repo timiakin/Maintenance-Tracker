@@ -1,0 +1,96 @@
+body
+{
+	
+	background-image: url("http://usersthink.com/wp-content/uploads/37-usersthink-stock-image.jpg");
+	padding-top: 50px;
+
+}
+
+form{
+	max-width: 380px;
+    margin: auto;
+
+}
+
+h1{
+	max-width: 420px;
+    margin: auto;
+   font-family: 'Quantico', sans-serif;
+    
+    color: blue;
+    padding-left: 100px
+
+
+}
+h2{
+	max-width: 420px;
+    margin: auto;
+	font-family: 'Archivo Black', sans-serif;
+	/*color: #4ED3ff*/
+	color: darkblue;
+	
+
+}
+span {
+    margin: 0 10px;
+}
+
+span:first-of-type {
+    margin-left: 0;
+
+}
+
+span:last-of-type {
+    margin-right: 0;
+}
+
+
+.border {
+	border: 1px solid gray;
+	padding: 10px;
+	border-radius: 25px;
+	background-color: gray;
+	padding-top: 18px;
+}
+/*
+label
+{
+	font-family: 'Teko', sans-serif;
+	
+
+}*/
+
+
+
+.topcorner{
+   position:absolute;
+   top:10px;
+   right:10px;
+   width:90px;
+height:30px;
+overflow: hidden;
+border-radius:0.5em;
+background-color: #52D5FF;
+   
+  }
+
+  .tbox{
+width:350px;
+height:50px;
+overflow: hidden;
+border-radius:0.5em;
+padding-left: 15px;
+padding-top: 5px;
+font-size: 17px;
+
+}
+
+.tbut{
+	width:90px;
+height:30px;
+overflow: hidden;
+border-radius:0.5em;
+background-color: #52D5FF;
+}
+
+
