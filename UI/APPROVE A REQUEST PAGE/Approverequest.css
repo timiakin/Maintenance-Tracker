@@ -1,0 +1,25 @@
+.p1{
+	border: 1px solid;
+	font-size: 19px;
+	padding: 20px;
+	width: 80%;
+	border-radius: 25px;
+  font-family: 'Amaranth', sans-serif;
+
+}
+
+textarea{
+	border-radius: 25px;
+}
+
+h2{
+	font-family: 'Expletus Sans', cursive;
+	color: blue;
+}
+
+h1{
+  font-family: 'Quantico', sans-serif;
+  color: blue;
+  
+
+}
