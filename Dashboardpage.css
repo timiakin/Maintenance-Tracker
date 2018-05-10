@@ -58,14 +58,12 @@ div{
   padding-top: 50px;
   padding-bottom: 400px;
   background-color: white;
-/*background-image: url("http://wlpapers.com/images/blue-graph-paper-1.jpg")*/;
-;
 
 }
 
 
 th {
-   
+   /* background-color: #52D5FF;*/
     background-color: #40413c;
     color: white;
 }
@@ -86,12 +84,11 @@ position:absolute;
 
 a{
   text-decoration: none;
-  color: blue;
+   color: blue;
 }
 
 body{
   background-color: lightgray;
-
 }
 
 h1{
