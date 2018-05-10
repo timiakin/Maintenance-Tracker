@@ -2,7 +2,7 @@
   #topcorner1{
    position:absolute;
    top:10px;
-   right: 10px;
+   right: 50px;
    width:90px;
 height:30px;
 overflow: hidden;
@@ -27,10 +27,10 @@ margin-top: 20px;
 
 #table1{
 
-  max-width: 980px;
+  max-width: 1140px;
     margin: auto;
     font-size: 20px;
-    width: 1800px;
+    width: 2200px;
     margin-right: 10px;
     margin-top: 2px;
     border-collapse: collapse;
@@ -42,14 +42,13 @@ margin-top: 20px;
 div{
   margin-top: 0px;
 
-  border: 0px; solid;
-  margin-left: 300px;
-  padding-top: 50px;
-  padding-bottom: 300px;
+  border: 0px solid ;
+  margin-left: 170px;
+  padding-top: 20px;
+  padding-bottom: 400px;
   background-color: white;
 
 }
-
 
 
 
@@ -70,4 +69,34 @@ position:absolute;
 a{
   text-decoration: none;
 }
+
+body{
+  background-color: lightgray;
+
+}
+
+h1{
+  font-family: 'Quantico', sans-serif;
+  color: blue;
+  
+
+}
+h2{
+  font-family: 'Quantico', sans-serif;
+  color: blue;
+  
+
+}
+
+
+#header td{
+  background-color: #40413c;
+  height: 40px;
+
+
+}
+a{
+  color: black;
+}
+
 
