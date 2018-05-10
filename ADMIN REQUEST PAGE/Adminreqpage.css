@@ -1,15 +1,4 @@
-#topcorner{
-   position:absolute;
-   top:10px;
-   right: 200px;
-   width:90px;
-height:30px;
-overflow: hidden;
-border-radius:0.5em;
-background-color: #52D5FF;
-margin-top: 20px;
-   
-  }
+
   #topcorner1{
    position:absolute;
    top:10px;
@@ -22,3 +11,24 @@ background-color: #52D5FF;
 margin-top: 20px;
    
   }
+
+.bottom td{
+  border-bottom: 1px solid black;
+  font-size: 40px;
+  
+}
+
+#top{
+  border-top: 1px solid black;
+  font-size: 40px;
+}
+
+
+div{
+
+  margin-top: 40px;
+}
+
+a{
+  text-decoration: none;
+}
