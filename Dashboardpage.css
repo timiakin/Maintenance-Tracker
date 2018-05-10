@@ -1,4 +1,5 @@
 
+
 #topcorner{
    position:absolute;
    top:10px;
@@ -8,6 +9,9 @@ height:30px;
 overflow: hidden;
 border-radius:0.5em;
 background-color: #52D5FF;
+
+margin-top: 20px;
+
    
   }
   #topcorner1{
@@ -19,6 +23,7 @@ height:30px;
 overflow: hidden;
 border-radius:0.5em;
 background-color: #52D5FF;
+
    
   }
  .bottom td{
@@ -41,3 +46,8 @@ div{
 a{
   text-decoration: none;
 }
+
+margin-top: 20px;
+   
+  }
+
