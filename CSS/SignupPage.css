@@ -1,19 +1,20 @@
 body
 {background-image: url("http://usersthink.com/wp-content/uploads/37-usersthink-stock-image.jpg");
-padding-top: 50px;
+padding-top: 30px;
 }
 form{
 max-width: 380px;
-margin: auto;}
-
+margin: auto;
+}
 h1{
 max-width: 420px;
 margin: auto;
 font-family: 'Quantico', sans-serif;
 color: blue;
-padding-left: 100px;
+padding-left: 100px
 }
-h2{max-width: 420px;
+h2{
+max-width: 420px;
 margin: auto;
 font-family: 'Archivo Black', sans-serif;
 color: darkblue;
@@ -27,38 +28,31 @@ margin-left: 0;
 span:last-of-type {
 margin-right: 0;
 }
-
-
 .border {
-	border: 1px solid gray;
-	padding: 10px;
-	border-radius: 25px;
-	background-color: gray;
-	padding-top: 18px;
+border: 1px solid gray;
+padding: 10px;
+border-radius: 25px;
+background-color: gray;
+padding-top: 18px;
 }
-/*
-label
-{
-	font-family: 'Teko', sans-serif;
-	
-
-}*/
-
-
-
-.topcorner{
-   position:absolute;
-   top:10px;
-   right:10px;
-   width:90px;
-height:30px;
-overflow: hidden;
-border-radius:0.5em;
-background-color: #52D5FF;
-   
-  }
-
-  .tbox{
+ul {
+list-style-type: none;
+margin: 0;
+border: 0px solid;
+padding: 20px;
+border-radius: 15px;
+background-color: #F7F7F9;
+}
+li {
+display: inline;
+margin-right: 2em;
+padding-left: 9.5%;
+}
+a{
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+}
+.tbox{
 width:350px;
 height:50px;
 overflow: hidden;
@@ -66,11 +60,8 @@ border-radius:0.5em;
 padding-left: 15px;
 padding-top: 5px;
 font-size: 17px;
-
 }
-
-.tbut{
-	width:90px;
+.tbut{	width:90px;
 height:30px;
 overflow: hidden;
 border-radius:0.5em;
