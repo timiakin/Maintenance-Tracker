@@ -1,0 +1,75 @@
+#topcorner1{
+position:absolute;
+top:10px;
+right: 10px;
+width:90px;
+height:30px;
+overflow: hidden;
+border-radius:0.5em;
+background-color: #52D5FF;
+margin-top: 20px;
+}
+.bottom td{
+  border-bottom: 1px solid black;
+font-size: 25px;}
+#top{
+border-top: 1px solid black;
+font-size: 25px;
+}
+#table1{
+max-width: 1140px;
+margin: auto;
+font-size: 15px;
+width: 95%;
+margin-right: 10px;
+margin-top: 2px;
+border-collapse: collapse;
+background-color: lightgray;
+height: 200px;
+}
+div{
+margin-top: 0px;
+border: 0px solid ;
+margin-left: 150px;
+padding-top: 15px;
+padding-bottom: 400px;
+ }
+th {
+background-color: #40413c;
+color: white;
+}
+table td {
+border color:  black;
+}
+#table2{
+position:absolute;
+top:10px;
+left: 10px;
+margin-top: 90px;
+height: 200px;
+}
+a{text-decoration: none;
+color: blue;
+}
+body{
+background-image: url("http://usersthink.com/wp-content/uploads/37-usersthink-stock-image.jpg");
+}
+h1{font-family: 'Quantico', sans-serif;
+color: blue;
+}
+#topcorner2{
+position:absolute;
+top:10px;
+right: 110px;
+width:90px;
+height:30px;
+overflow: hidden;
+border-radius:0.5em;
+background-color: #52D5FF;
+margin-top: 20px;
+color: black;
+}
+
+
+
+
