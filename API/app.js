@@ -23,6 +23,16 @@ app.get('/api/v1/users/requests/:userID', (req, res) => { // Fetching a particul
   }
 });
 
+app.post('/api/v1/users/requests', (req, res) => { // Adding a request
+  if (req.body.title && req.body.id) {
+    requests.push({ id: req.body.id, title: req.body.title });
+    console.log(req.body.title);
+    res.send(requests);
+  } else {
+    res.send('Error');
+  }
+});
+
 const port = 8000;
 
 app.listen(port, () => { // starting the server
