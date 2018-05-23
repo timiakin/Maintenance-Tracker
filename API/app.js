@@ -33,6 +33,14 @@ app.post('/api/v1/users/requests', (req, res) => { // Adding a request
   }
 });
 
+app.put('/api/v1/users/requests/:userID', (req, res) => { // Modifying  a request
+  const number = req.params.userID;
+  requests[number].title = req.body.title;
+  console.log(req.params.userID);
+  console.log(req.body.title);
+  res.send(requests);
+});
+
 const port = 8000;
 
 app.listen(port, () => { // starting the server
