@@ -13,6 +13,15 @@ app.get('/api/v1/users/requests', (req, res) => { // Fetching all requests
   res.send(requests);
 });
 
+app.get('/api/v1/users/requests/:userID', (req, res) => { // Fetching a particular request
+  if (req.params.userID) {
+    console.log(req.params);
+    const number = req.params.userID;
+    res.send(`${requests[number].title} ,this is request number:  ${number}`);
+  } else {
+    res.send('error');
+  }
+});
 
 const port = 8000;
 
