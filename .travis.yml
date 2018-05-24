@@ -14,4 +14,4 @@ branches:
 only:
  - feature
 after_success:
-- npm run coverage
+- nyc report --reporter=text-lcov | coveralls
