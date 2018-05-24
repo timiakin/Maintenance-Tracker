@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.org/timiakin/maintenance-tracker.svg?branch=feature)](https://travis-ci.org/timiakin/maintenance-tracker)
 
+[![Coverage Status](https://coveralls.io/repos/github/timiakin/maintenance-tracker/badge.svg?branch=feature)](https://coveralls.io/github/timiakin/maintenance-tracker?branch=feature)
+
+
 
 **SYNOPSIS**
 
