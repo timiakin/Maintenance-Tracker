@@ -7,7 +7,7 @@
     "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
     "start": "http-server",
     "test": "mocha --exit",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "coverage": "npm run test && nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",
   "license": "ISC",
