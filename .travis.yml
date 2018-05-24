@@ -10,8 +10,8 @@ env:
 cache:
 directories:
  - "node_modules"
-# branches:
-# only:
-#  - feature
+branches:
+only:
+ - feature
 after_success:
 - npm run coverage
