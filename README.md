@@ -1,8 +1,8 @@
-**Synopsis**
+**SYNOPSIS**
 
 Maintenance Tracker App is an application that provides users with the ability to reach out to operations or repairs department regarding repair or maintenance requests and monitor the status of their request. This project was done so as to build a fully functional maintenance tracker app. 
 
-**Code Example**
+**CODE EXAMPLE**
 
 Here is a simple API that displays all the request of an already signed in user 
 
@@ -14,7 +14,7 @@ app.get('/api/v1/users/requests', (req, res) => { // Fetching all requests
 
 });
 
-**Motivation**
+**MOTIVATION**
 
 **Built with**
 
