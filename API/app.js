@@ -27,6 +27,16 @@ app.get('/api/v1/users/requests/:ID', (req, res) => { // Fetching a particular r
   }
 });
 
+// app.post('/api/v1/users/requests', (req, res) => { // Adding a request
+//   if (req.body.title && req.body.id) {
+//     requests.push({ id: req.body.id, title: req.body.title });
+//     console.log(req.body.title);
+//     res.send(requests);
+//   } else {
+//     res.send('Error');
+//   }
+// });
+
 app.post('/api/v1/users/requests', (req, res) => { // Adding a request
   console.log(req.body.id);
   const newi = [];
@@ -67,4 +77,5 @@ app.listen(port, () => { // starting the server
   console.log(`We are live on ${port}`);
 });
 
+// export default app;
 module.exports = app;
