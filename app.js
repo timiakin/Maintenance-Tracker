@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Welcome To Our APP!');
 });
 
-const requests = [{ id: 0, title: 'Bad Engine' }, { id: 1, title: 'Broken mirror' }, { id: 2, title: 'Fix my tyres' }];
+const requests = [{ id: "0", title: 'Bad Engine' }, { id: "1", title: 'Broken mirror' }, { id: "2", title: 'Fix my tyres' }];
 
 
 app.get('/api/v1/users/requests', (req, res) => { // Fetching all requests
