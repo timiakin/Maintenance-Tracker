@@ -22,14 +22,15 @@ app.get('/api/v1/users/requests', (req, res) => { // Fetching all requests
 });
 
 **MOTIVATION**
+The aim of this project was to create an app to deal with requests. The main reason was to learn and develop myself as a software deeloper.
 
 **Built with**
 
 Here is a list of resources you need to create this app.
 
-Node.js, Express, Editor of your choice (VScode was used), Eslint, Babel, Mocha, airbnb
+Node.js, Express, Editor of your choice (VScode was used), Eslint, Babel, Mocha, airbnb, HTML, CSS
 
-**API Reference**
+
 
 **Tests**
 
