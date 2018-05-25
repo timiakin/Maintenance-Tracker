@@ -2,6 +2,7 @@
 
 <a href="https://codeclimate.com/github/timiakin/maintenance-tracker/maintainability"><img src="https://api.codeclimate.com/v1/badges/fe945bc2b2a7b3f99d92/maintainability" /></a>
 
+[![Coverage Status](https://coveralls.io/repos/github/timiakin/maintenance-tracker/badge.svg?branch=feature)](https://coveralls.io/github/timiakin/maintenance-tracker?branch=feature)
 
 
 
