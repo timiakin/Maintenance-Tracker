@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/timiakin/maintenance-tracker.svg?branch=feature)](https://travis-ci.org/timiakin/maintenance-tracker)
 
+<a href="https://codeclimate.com/github/timiakin/maintenance-tracker/maintainability"><img src="https://api.codeclimate.com/v1/badges/fe945bc2b2a7b3f99d92/maintainability" /></a>
 
 
 
