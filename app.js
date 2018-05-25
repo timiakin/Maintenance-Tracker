@@ -19,10 +19,6 @@ app.get('/api/v1/users/requests', (req, res) => { // Fetching all requests
   res.send(requests);
 });
 
-app.get('/', (req, res) => { 
-  res.send('Hello everyone');
-});
-
 app.get('/api/v1/users/requests/:ID', (req, res) => { // Fetching a particular request
   if (req.params.ID) {
     console.log(req.params);
