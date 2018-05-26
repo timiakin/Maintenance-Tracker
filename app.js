@@ -6,38 +6,31 @@ const bodyparser = require('body-parser');
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
 
-// const reqRoutes = require('./api/routes/products');
-
 app.get('/', (req, res) => {
   res.send('Welcome To Our APP!');
 });
 
-const requests = [{ id: "0", title: 'Bad Engine' }, { id: "1", title: 'Broken mirror' }, { id: "2", title: 'Fix my tyres' }];
+const requests = [{ id: 0, title: 'Bad Engine' }, { id: 1, title: 'Broken mirror' }, { id: 2, title: 'Fix my tyres' }];
 
 
 app.get('/api/v1/users/requests', (req, res) => { // Fetching all requests
   res.send(requests);
 });
 
-app.get('/api/v1/users/requests/:ID', (req, res) => { // Fetching a particular request
-  if (req.params.ID) {
+app.get('/api/v1/users/requests/:id', (req, res) => { // Fetching a particular request
+  console.log(req.params.id);
+  const newi = [];
+  for (let x = 0; x < requests.length; x += 1) {
+    newi.push(Number(requests[x].id));
+  }
+  if (newi.includes(Number(req.params.id))) {
     console.log(req.params);
-    const number = req.params.ID;
+    const number = req.params.id;
     res.send(`${requests[number].title} ,this is request number:  ${number}`);
   } else {
-    res.send('error');
+    res.send('this request doesnot exist');
   }
 });
-
-// app.post('/api/v1/users/requests', (req, res) => { // Adding a request
-//   if (req.body.title && req.body.id) {
-//     requests.push({ id: req.body.id, title: req.body.title });
-//     console.log(req.body.title);
-//     res.send(requests);
-//   } else {
-//     res.send('Error');
-//   }
-// });
 
 app.post('/api/v1/users/requests', (req, res) => { // Adding a request
   console.log(req.body.id);
@@ -49,8 +42,7 @@ app.post('/api/v1/users/requests', (req, res) => { // Adding a request
   if (newi.includes(Number(req.body.id))) {
     res.send('Cannot create new request with the same ID');
   } else if (req.body.title && req.body.id) {
-    // console.log(item.id);
-    requests.push({ id: req.body.id, title: req.body.title });
+    requests.push({ id: Number(req.body.id), title: req.body.title });
     console.log(req.body.title);
     res.send(requests);
   } else {
@@ -59,20 +51,39 @@ app.post('/api/v1/users/requests', (req, res) => { // Adding a request
 });
 
 
-app.put('/api/v1/users/requests/:ID', (req, res) => { // Modifying  a request
-  const number = req.params.ID;
+app.put('/api/v1/users/requests/:id', (req, res) => { // Modifying  a request
+  const newi = [];
+  for (let x = 0; x < requests.length; x += 1) {
+    newi.push(Number(requests[x].id));
+  }
+  if (newi.includes(Number(req.params.id))) {
+  const number = req.params.id;
   requests[number].title = req.body.title;
-  console.log(req.params.ID);
+  console.log(req.params.id);
   console.log(req.body.title);
   res.send(requests);
+  }
+  else{
+    res.send('sorry, that id doesnot exist in our database');
+  }
 });
 
-app.delete('/api/v1/users/requests/delete/:userID', (req, res) => { // Modifying  a request
-  const number = req.params.userID;
+app.delete('/api/v1/users/requests/delete/:id', (req, res) => { // Modifying  a request
+  const newi = [];
+  for (let x = 0; x < requests.length; x += 1) {
+    newi.push(Number(requests[x].id));
+  }
+  if (newi.includes(Number(req.params.id))) {
+  const number = req.params.id;
   requests.splice(number, 1);
-  console.log(req.params.userID);
+  console.log(req.params.id);
   console.log(req.body.title);
   res.send(requests);
+  }
+  else{
+    res.send('sorry, you cannot delete id no. ' + req.params.id + ' because that id doesnot exist in our database');
+  }
+
 });
 
 
