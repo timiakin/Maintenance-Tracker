@@ -37,7 +37,8 @@ describe('/POST request', () => {
   it('should POST a request', (done) => {
     const reqs = {
       id: 4,
-      title: 'Fix Bad Tyres',
+      title: 'Fix Bad Tyres',date: '1/12/2016',
+       status: 'pending'
     };
     chai.request(app)
       .post('/api/v1/users/requests')
@@ -90,7 +91,7 @@ describe('/DELETE/:idrequest', () => {
 
 describe('/PUT/:id', () => {
   it('it should UPDATE a request based on the id', (done) => {
-    const reqs = ({ id: 1, title: 'spoilt bonnet' }); // update a reqs.
+    const reqs = ({ id: 1, title: 'spoilt bonnet',date: '1/12/2016', status: 'pending' }); // update a reqs.
     chai.request(app)
       .put('/api/v1/users/requests/1')
       .send(reqs) // if you send the updated request, the following below will happen
@@ -98,6 +99,8 @@ describe('/PUT/:id', () => {
         res.should.have.status(200);
         reqs.should.be.a('object');
         reqs.should.have.property('title').eql('spoilt bonnet');
+        reqs.should.have.property('date').eql('1/12/2016');
+        reqs.should.have.property('status').eql('pending');
         console.log(res.body);
         done();
       });
